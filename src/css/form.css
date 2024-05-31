@@ -1,0 +1,71 @@
+
+.name-email-container,.query-type-container{
+    display: grid;
+    grid-template-rows: auto;
+    column-gap: 16px;
+    width: 100%;
+}
+
+
+.item.userEmail{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.query-type-wrapper{
+    width: 100%;
+}
+.custom-container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid var(--grey-500);
+    margin-bottom: 29px;
+
+  }
+  .custom-radio {
+    position: absolute;
+    left: 8px;
+
+
+  }
+  
+
+ .my-text-area{
+    margin-bottom: 40px;
+ }
+.field-name-label{
+    display: block;
+    padding-bottom: 10px;
+}
+.field-name-label>span{
+    color: var(--green-600);
+
+}
+.radio-labels{
+    margin-left: 14px;
+
+}
+.button-container{
+    margin-top: 40px;
+    width: 100%;
+}
+button{
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--green-600);   
+    border: none;
+    font-weight: 700;
+    color: var(--white);
+}
+.error-text{
+    color: red;
+}
+span{   
+    color: var(--green-600);
+}
+  

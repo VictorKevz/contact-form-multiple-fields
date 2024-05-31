@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+:root {
+  --green-200: hsl(148, 38%, 91%);
+  --green-600: hsl(169, 82%, 27%);
+
+  --red: hsl(0, 66%, 54%);
+
+  --white: hsl(0, 0%, 100%);
+  --grey-500: hsl(186, 15%, 59%);
+  --grey-900: hsl(187, 24%, 22%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+}
+h1,
+h2 {
+  margin-bottom: 37px;
+  font-weight: 700;
+}
+.toast-inner-container > h2 {
+  margin: 0;
+}
+h1 {
+  font-size: 1.9rem;
+}
+h1 {
+  font-size: 1.5rem;
+}
+body {
+  font-family: "Karla", sans-serif;
+  background-color: var(--green-200);
+}
+.outer-container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.inner-container {
+  border-radius: 15px;
+  background-color: var(--white);
+  padding: 40px;
+}
+
+/* --------------------------HOVER STATES---------------------------------- */
+button:hover {
+  cursor: pointer;
+  background-color: var(--grey-900);
+}
+.custom-container:hover {
+  cursor: pointer;
+  border: 1px solid var(--green-600);
+  background-color: hsl(169, 82%, 27%, 0.1);
+}
+.item:active {
+  cursor: pointer;
+}
+/* --------------------------HOVER STATES---------------------------------- */
+
+/* For smaller devices */
+@media (max-width: 799px) {
+  .name-email-container,
+  .query-type-container {
+    grid-template-columns: 1fr;
+    row-gap: 56px;
+  }
+  .outer-container {
+    width: 90%;
+    margin: 5% auto 5% auto;
+  }
+  .inner-container {
+    width: 100%;
+    height: fit-content;
+  }
+  
+}
+
+/* For large devices */
+@media (min-width: 799px) {
+  .name-email-container,
+  .query-type-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .item.userEmail,
+  .my-text-area {
+    grid-column: span 2;
+  }
+  .inner-container {
+    min-width: 736px;
+    min-height: 773px;
+  }
+}
